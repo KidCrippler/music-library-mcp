@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Song Review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .song-info {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .song-info div {
+            margin-bottom: 8px;
+        }
+
+        .song-info strong {
+            color: #555;
+            display: inline-block;
+            width: 80px;
+        }
+
+        .reference {
+            background: #fff3cd;
+            padding: 12px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .reference strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #856404;
+        }
+
+        .reference-text {
+            font-family: monospace;
+            font-size: 13px;
+            color: #856404;
+            word-break: break-word;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        .hint {
+            font-size: 12px;
+            color: #999;
+            margin-top: 3px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #45a049;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-outline {
+            background: white;
+            color: #666;
+            border: 2px solid #ddd;
+        }
+
+        .btn-outline:hover {
+            background: #f5f5f5;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .message {
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .message.show {
+            display: block;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .keyboard-hint {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .reviewed-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 3px;
+            font-size: 11px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Manual Song Review</h1>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+        <div class="progress-text" id="progressText">Loading...</div>
+
+        <div id="content" class="loading">
+            Loading songs...
+        </div>
+
+        <div id="reviewForm" style="display: none;">
+            <div class="song-info">
+                <div><strong>Song:</strong> <span id="songName"></span> <span id="reviewedBadge"></span></div>
+                <div><strong>Singer:</strong> <span id="songSinger"></span></div>
+                <div><strong>ID:</strong> <span id="songId"></span></div>
+            </div>
+
+            <div class="reference" id="referenceSection">
+                <strong>Reference (Unparsed String):</strong>
+                <div class="reference-text" id="unparsedString"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="composers">Composers:</label>
+                <input type="text" id="composers" placeholder="Enter names separated by commas">
+                <div class="hint">Separate multiple names with commas</div>
+            </div>
+
+            <div class="form-group">
+                <label for="lyricists">Lyricists:</label>
+                <input type="text" id="lyricists" placeholder="Enter names separated by commas">
+                <div class="hint">Separate multiple names with commas</div>
+            </div>
+
+            <div class="form-group">
+                <label for="translators">Translators (optional):</label>
+                <input type="text" id="translators" placeholder="Enter names separated by commas">
+                <div class="hint">Leave empty if not applicable</div>
+            </div>
+
+            <div class="message" id="message"></div>
+
+            <div class="button-group">
+                <button class="btn-secondary" id="prevBtn" onclick="navigateSong(-1)">
+                    ← Previous
+                </button>
+                <button class="btn-outline" id="skipBtn" onclick="navigateSong(1)">
+                    Skip →
+                </button>
+                <button class="btn-primary" id="saveBtn" onclick="saveSong()">
+                    Save & Next →
+                </button>
+            </div>
+
+            <div class="keyboard-hint">
+                💡 Tip: Use Ctrl+S to save, Arrow keys to navigate
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let songs = [];
+        let currentIndex = 0;
+        let stats = { total: 0, reviewed: 0 };
+
+        // Load all songs on page load
+        async function loadSongs() {
+            try {
+                const response = await fetch('/api/songs');
+                songs = await response.json();
+                
+                const statsResponse = await fetch('/api/stats');
+                stats = await statsResponse.json();
+                
+                // Restore last position from localStorage
+                const savedIndex = localStorage.getItem('currentSongIndex');
+                if (savedIndex !== null && savedIndex < songs.length) {
+                    currentIndex = parseInt(savedIndex);
+                }
+                
+                document.getElementById('content').style.display = 'none';
+                document.getElementById('reviewForm').style.display = 'block';
+                
+                updateProgress();
+                displaySong();
+            } catch (error) {
+                document.getElementById('content').innerHTML = 
+                    '<div class="message error show">Error loading songs: ' + error.message + '</div>';
+            }
+        }
+
+        function displaySong() {
+            if (songs.length === 0) {
+                document.getElementById('reviewForm').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                document.getElementById('content').innerHTML = 
+                    '<div class="message success show">All songs reviewed! 🎉</div>';
+                return;
+            }
+
+            const song = songs[currentIndex];
+            
+            document.getElementById('songName').textContent = song.name;
+            document.getElementById('songSinger').textContent = song.singer || 'N/A';
+            document.getElementById('songId').textContent = song.id;
+            
+            // Show reviewed badge if already reviewed
+            const badge = document.getElementById('reviewedBadge');
+            if (song.isReviewed) {
+                badge.innerHTML = '<span class="reviewed-badge">✓ Reviewed</span>';
+            } else {
+                badge.innerHTML = '';
+            }
+            
+            // Show unparsed string if available
+            const referenceSection = document.getElementById('referenceSection');
+            const unparsedString = document.getElementById('unparsedString');
+            if (song.unparsedString) {
+                referenceSection.style.display = 'block';
+                unparsedString.textContent = song.unparsedString;
+            } else {
+                referenceSection.style.display = 'none';
+            }
+            
+            // Populate form fields
+            document.getElementById('composers').value = song.composers ? song.composers.join(', ') : '';
+            document.getElementById('lyricists').value = song.lyricists ? song.lyricists.join(', ') : '';
+            document.getElementById('translators').value = song.translators ? song.translators.join(', ') : '';
+            
+            // Update button states
+            document.getElementById('prevBtn').disabled = currentIndex === 0;
+            document.getElementById('skipBtn').disabled = currentIndex >= songs.length - 1;
+            document.getElementById('saveBtn').disabled = currentIndex >= songs.length - 1;
+            
+            // Hide message
+            hideMessage();
+            
+            // Save current position
+            localStorage.setItem('currentSongIndex', currentIndex);
+            
+            updateProgress();
+        }
+
+        function updateProgress() {
+            const progressText = `Song ${currentIndex + 1} of ${songs.length} (${stats.reviewed} reviewed, ${stats.remaining} remaining)`;
+            document.getElementById('progressText').textContent = progressText;
+            
+            const percentage = stats.total > 0 ? (stats.reviewed / stats.total * 100) : 0;
+            document.getElementById('progressBar').style.width = percentage + '%';
+        }
+
+        async function saveSong() {
+            const song = songs[currentIndex];
+            const data = {
+                composers: document.getElementById('composers').value,
+                lyricists: document.getElementById('lyricists').value,
+                translators: document.getElementById('translators').value
+            };
+            
+            try {
+                const response = await fetch(`/api/songs/${song.id}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showMessage('Saved successfully!', 'success');
+                    
+                    // Update song as reviewed
+                    songs[currentIndex].isReviewed = true;
+                    
+                    // Update stats
+                    stats.reviewed++;
+                    stats.remaining--;
+                    
+                    // Move to next song after a short delay
+                    setTimeout(() => {
+                        navigateSong(1);
+                    }, 500);
+                } else {
+                    showMessage('Error saving: ' + result.message, 'error');
+                }
+            } catch (error) {
+                showMessage('Error: ' + error.message, 'error');
+            }
+        }
+
+        function navigateSong(direction) {
+            const newIndex = currentIndex + direction;
+            if (newIndex >= 0 && newIndex < songs.length) {
+                currentIndex = newIndex;
+                displaySong();
+            }
+        }
+
+        function showMessage(text, type) {
+            const message = document.getElementById('message');
+            message.textContent = text;
+            message.className = 'message ' + type + ' show';
+        }
+
+        function hideMessage() {
+            const message = document.getElementById('message');
+            message.className = 'message';
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Ctrl+S or Cmd+S to save
+            if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault();
+                if (!document.getElementById('saveBtn').disabled) {
+                    saveSong();
+                }
+            }
+            
+            // Arrow keys for navigation (when not in input field)
+            if (!['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+                if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    if (!document.getElementById('prevBtn').disabled) {
+                        navigateSong(-1);
+                    }
+                } else if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    if (!document.getElementById('skipBtn').disabled) {
+                        navigateSong(1);
+                    }
+                }
+            }
+        });
+
+        // Load songs when page loads
+        loadSongs();
+    </script>
+</body>
+</html>
+

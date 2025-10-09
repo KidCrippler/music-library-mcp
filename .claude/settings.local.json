@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/alonc/songs/**)",
+      "Bash(pip install:*)",
+      "Bash(python test:*)",
+      "Bash(python -m pip install:*)",
+      "Bash(/opt/homebrew/bin/python3.11 -m pip install:*)",
+      "Bash(/opt/homebrew/bin/python3.11:*)",
+      "Bash(claude mcp:*)",
+      "mcp__music-library__search_songs",
+      "mcp__music-library__get_youtube_metadata",
+      "mcp__music-library__get_lyrics",
+      "mcp__music-library__get_collaborations"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "enabledMcpjsonServers": [
+    "music-library"
+  ]
+}

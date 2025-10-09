@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "music-library": {
+      "command": "/opt/homebrew/bin/python3.11",
+      "args": ["-m", "music_library_mcp.server"],
+      "cwd": "/Users/alonc/mcp-intro"
+    }
+  }
+}
