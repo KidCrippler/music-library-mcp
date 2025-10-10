@@ -99,7 +99,7 @@
 			"name": "יעלה ויבוא",
 			"singer": "גידי גוב",
 			"composers": ["בני נגרי"],
-			"lyricists": ["יורם טהר לב"],
+			"lyricists": ["יורם טהרלב"],
 			"playback": {
 				"youTubeVideoId": "RFMu8LruXn0"
 			},
@@ -311,7 +311,8 @@
 			"name": "גשם כבד עומד ליפול",
 			"singer": "אביב גפן",
 			"composers": ["בוב דילן"],
-			"lyricists": ["בוב דילן (יהונתן גפן)"],
+			"lyricists": ["בוב דילן"],
+			"translators": ["יהונתן גפן"],
 			"playback": {
 				"youTubeVideoId": "P9u_svtR3Sg"
 			},
@@ -358,8 +359,8 @@
 			"id": 1000022,
 			"name": "כל כיוון",
 			"singer": "רוקפור",
-			"composers": ["אלי לו-לאי", "ברוך בן יצחק"],
-			"lyricists": ["אלי לו-לאי", "ברוך בן יצחק", "דני רכט"],
+			"composers": ["אלי לולאי", "ברוך בן יצחק"],
+			"lyricists": ["אלי לולאי", "ברוך בן יצחק", "דני רכט"],
 			"playback": {
 				"youTubeVideoId": "2fZ1udrEOSU"
 			},
@@ -374,8 +375,8 @@
 			"id": 1000023,
 			"name": "מכונת הזמן",
 			"singer": "רוקפור",
-			"composers": ["אלי לו-לאי", "ברוך בן יצחק"],
-			"lyricists": ["אלי לו", "לאי", "דני רכט"],
+			"composers": ["אלי לולאי", "ברוך בן יצחק"],
+			"lyricists": ["אלי לולאי", "דני רכט"],
 			"playback": {
 				"youTubeVideoId": "DJQDjtximFI"
 			},
@@ -488,8 +489,8 @@
 			"id": 1000031,
 			"name": "האיש שראה הכול",
 			"singer": "רוקפור",
-			"composers": ["אלי לו-לאי", "ברוך בן יצחק"],
-			"lyricists": ["אלי לו-לאי", "דני רכט"],
+			"composers": ["אלי לולאי", "ברוך בן יצחק"],
+			"lyricists": ["אלי לולאי", "דני רכט"],
 			"playback": {
 				"youTubeVideoId": "za4aTmtjzDo"
 			},
@@ -733,7 +734,7 @@
 			"name": "דרכנו",
 			"singer": "דני בסן",
 			"composers": ["יזהר אשדות"],
-			"lyricists": ["יעקב רוטבליט (-1)"],
+			"lyricists": ["יעקב רוטבליט"],
 			"playback": {
 				"youTubeVideoId": "xwDQd1rPs_Y"
 			},
@@ -845,7 +846,7 @@
 			"name": "איש קש",
 			"singer": "מוניקה סקס",
 			"composers": ["יהלי סובול", "פיטר רוט"],
-			"lyricists": ["יהלי סובול", "פיטר רוט (-2)"],
+			"lyricists": ["יהלי סובול", "פיטר רוט"],
 			"playback": {
 				"youTubeVideoId": "-32TOD2kg3g"
 			},
@@ -910,7 +911,7 @@
 			"name": "גיטרה וכינור",
 			"singer": "שלום חנוך",
 			"composers": ["שלום חנוך"],
-			"lyricists": ["שלום חנוך (-3)"],
+			"lyricists": ["שלום חנוך"],
 			"playback": {
 				"youTubeVideoId": "6UltSHD_BbM"
 			},
@@ -1200,7 +1201,7 @@
 			"name": "מה איתי",
 			"singer": "החלונות הגבוהים",
 			"composers": ["שלום חנוך", "שמוליק קראוס"],
-			"lyricists": ["אריק איינשטיין", "ג'וזי כץ (-4)"],
+			"lyricists": ["אריק איינשטיין", "ג'וזי כץ"],
 			"playback": {
 				"youTubeVideoId": "fWdreBGjRXE"
 			},
@@ -1423,7 +1424,7 @@
 			"id": 1000089,
 			"name": "שמתי לי פודרה",
 			"singer": "אביתר בנאי ואפרת בן צור",
-			"composers": ["אורי סלע (אמא אווזה)"],
+			"composers": ["אורי סלע"],
 			"lyricists": ["אביתר בנאי"],
 			"playback": {
 				"youTubeVideoId": "48qDD38_MKk"
@@ -1472,7 +1473,7 @@
 			"name": "מה שעובר עלי ",
 			"singer": "איפה הילד",
 			"composers": ["חמי רודנר"],
-			"lyricists": ["חמי רודנר (-1)"],
+			"lyricists": ["חמי רודנר"],
 			"playback": {
 				"youTubeVideoId": "3yGAmQEtm00"
 			},
@@ -1504,7 +1505,7 @@
 			"name": "המגפיים של ברוך",
 			"singer": "כוורת",
 			"composers": ["דני סנדרסון"],
-			"lyricists": ["אולארצ'יק", "סנדרסון", "מנחם זילברמן (-2)"],
+			"lyricists": ["אולארצ'יק", "סנדרסון", "מנחם זילברמן"],
 			"playback": {
 				"youTubeVideoId": "qoGM7G7cZJk"
 			},
@@ -1852,7 +1853,7 @@
 			"name": "שיר אהבה בדואי",
 			"singer": "דיויד ברוזה",
 			"composers": ["יצחק קלפטר"],
-			"lyricists": ["יצחק", "יינגרטן (-4)"],
+			"lyricists": ["יצחק", "יינגרטן"],
 			"playback": {
 				"youTubeVideoId": "0TFos2UX_Qo"
 			},
@@ -2891,8 +2892,8 @@
 			"id": 1000182,
 			"name": "תחזור תחזור",
 			"singer": "משינה",
-			"composers": ["יובל בנאי / יובל בנאי"],
-			"lyricists": ["יובל בנאי / יובל בנאי"],
+			"composers": ["יובל בנאי"],
+			"lyricists": ["יובל בנאי"],
 			"playback": {
 				"youTubeVideoId": "RxonDOJGHBo"
 			},
@@ -4122,7 +4123,7 @@
 			"name": "חזקה מהרוח",
 			"singer": "גלי עטרי",
 			"composers": ["קורין אלאל"],
-			"lyricists": ["אסתר שמיר (1-)"],
+			"lyricists": ["אסתר שמיר"],
 			"playback": {
 				"youTubeVideoId": "IBeUJY-Ybls"
 			},
@@ -4803,7 +4804,7 @@
 			"name": "כל מה שיש לי",
 			"singer": "נתן גושן",
 			"composers": ["נתן גושן"],
-			"lyricists": ["נתן גושן (1+)"],
+			"lyricists": ["נתן גושן"],
 			"playback": {
 				"youTubeVideoId": "yRZm0shwfw8"
 			},
@@ -5974,7 +5975,7 @@
 			"id": 1000388,
 			"name": "הצריף הקטן",
 			"singer": "עפרה חזה",
-			"composers": ["משה", "ילנסקי"],
+			"composers": ["משה וילנסקי"],
 			"lyricists": ["יהודה פרדיס"],
 			"playback": {
 				"youTubeVideoId": "ONpD51u70Ag"
@@ -6609,7 +6610,7 @@
 			"name": "בוא איתי אל הגליל",
 			"singer": "להקת פיקוד צפון",
 			"composers": ["יאיר רוזנבלום"],
-			"lyricists": ["אהוד מנור (-1)"],
+			"lyricists": ["אהוד מנור"],
 			"playback": {
 				"youTubeVideoId": "GAHUvfv_2AA"
 			},
@@ -6983,7 +6984,8 @@
 			"name": "צעיר לנצח",
 			"singer": "רמי קלינשטיין",
 			"composers": ["רמי קלינשטיין"],
-			"lyricists": ["בוב דילן (תרגום - יאיר לפיד)"],
+			"lyricists": ["בוב דילן"],
+			"translators": ["יאיר לפיד"],
 			"playback": {
 				"youTubeVideoId": "WGwVoBZQ2qo"
 			},
@@ -7324,7 +7326,7 @@
 			"name": "זה הגשם",
 			"singer": "נורית גלרון",
 			"composers": ["רן עפרון"],
-			"lyricists": ["יונה", "ולך"],
+			"lyricists": ["יונה וולך"],
 			"playback": {
 				"youTubeVideoId": "swbfdWNIBJ0"
 			},
@@ -7697,7 +7699,7 @@
 			"name": "שקט",
 			"singer": "בלאגן",
 			"composers": ["יובל מסנר"],
-			"lyricists": ["יונה", "ולך"],
+			"lyricists": ["יונה וולך"],
 			"playback": {
 				"youTubeVideoId": "MY_KmIxfiQA"
 			},
@@ -8129,8 +8131,8 @@
 			"id": 2000022,
 			"name": "בלוז מדרגות הרבנות",
 			"singer": "הכל עובר חביבי",
-			"composers": ["‏יובל ‏דור"],
-			"lyricists": ["‏אמנון ‏דנקנר ‏ ‏ ‏לחן: ‏יובל ‏דור"],
+			"composers": ["יובל דור"],
+			"lyricists": ["אמנון דנקנר"],
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage22.txt",
@@ -8406,7 +8408,7 @@
 			"id": 2000048,
 			"name": "חסקה",
 			"singer": "להקת חיל הים",
-			"composers": ["משה", "ילנסקי"],
+			"composers": ["משה וילנסקי"],
 			"lyricists": ["יורם טהרלב"],
 			"categoryIds": ["1", "5", "6"],
 			"lyrics": {
@@ -10588,7 +10590,7 @@
 			"name": "אני שוב מתאהב",
 			"singer": "גידי גוב",
 			"composers": ["צוף פילוסוף"],
-			"lyricists": ["יונה", "ולך"],
+			"lyricists": ["יונה וולך"],
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage269.txt",
@@ -10797,8 +10799,8 @@
 			"id": 2000285,
 			"name": "סיגל",
 			"singer": "אריס סאן",
-			"composers": ["‏אריס ‏סאן"],
-			"lyricists": ["‏יובב ‏כץ ‏‏ ‏ ‏לחן: ‏אריס ‏סאן"],
+			"composers": ["אריס סאן"],
+			"lyricists": ["יובב כץ"],
 			"categoryIds": ["1", "5", "6"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage285.txt"
@@ -10967,7 +10969,8 @@
 			"id": 2000297,
 			"name": "אמא",
 			"singer": "משה פרץ",
-			"composers": ["‏משה ‏פרץ"],
+			"composers": ["משה פרץ"],
+			"lyricists": ["משה פרץ"],
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage297.txt"
@@ -10979,8 +10982,8 @@
 			"id": 2000298,
 			"name": "לצפון באהבה (אלף שיר לצפון)",
 			"singer": "יגאל בשן",
-			"composers": ["‏נורית ‏הירש"],
-			"lyricists": ["‏דודו ‏ברק ‏ ‏ ‏לחן: ‏נורית ‏הירש"],
+			"composers": ["נורית הירש"],
+			"lyricists": ["דודו ברק"],
 			"categoryIds": ["1", "5", "6"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage298.txt"
@@ -10992,8 +10995,8 @@
 			"id": 2000299,
 			"name": "הייתי בגן עדן",
 			"singer": "שרית חדד",
-			"composers": ["‏שמעון ‏בוסקילה"],
-			"lyricists": ["‏אהוד ‏מנור ‏ ‏ ‏לחן: ‏שמעון ‏בוסקילה"],
+			"composers": ["שמעון בוסקילה"],
+			"lyricists": ["אהוד מנור"],
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage299.txt"
@@ -11005,8 +11008,8 @@
 			"id": 2000300,
 			"name": "אהבה בסוף הקיץ",
 			"singer": "צביקה פיק",
-			"composers": ["‏צביקה ‏פיק"],
-			"lyricists": ["‏מירית ‏שם ‏אור ‏ ‏ ‏לחן: ‏צביקה ‏פיק"],
+			"composers": ["צביקה פיק"],
+			"lyricists": ["מירית שם אור"],
 			"categoryIds": ["1", "5", "6"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage300.txt"
@@ -11018,8 +11021,8 @@
 			"id": 2000301,
 			"name": "ערב כחול עמוק",
 			"singer": "שלמה יידוב, ריטה",
-			"composers": ["‏שלמה ‏יידוב"],
-			"lyricists": ["‏מאיר ‏אריאל ‏ ‏ ‏לחן: ‏שלמה ‏יידוב"],
+			"composers": ["שלמה יידוב"],
+			"lyricists": ["מאיר אריאל"],
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage301.txt",
@@ -11411,7 +11414,7 @@
 			"id": 2000332,
 			"name": "לעולם בעקבות השמש",
 			"singer": "שרי",
-			"composers": ["רוני", "ייס"],
+			"composers": ["רוני וייס"],
 			"lyricists": ["אהוד מנור"],
 			"categoryIds": ["1", "5", "6"],
 			"lyrics": {
@@ -12656,7 +12659,7 @@
 			"id": 2000430,
 			"name": "מלודי",
 			"singer": "איזולירבנד",
-			"composers": ["רוני", "ייס"],
+			"composers": ["רוני וייס"],
 			"lyricists": ["לאה לופנפלד"],
 			"categoryIds": ["1", "7"],
 			"lyrics": {
@@ -12957,7 +12960,7 @@
 			"name": "בלב כבד",
 			"singer": "הפרברים",
 			"composers": ["ז'וליניו דו אקורדאון"],
-			"lyricists": ["ז'ואאו דו", "אלה"],
+			"lyricists": ["ז'ואאו דו ואלה"],
 			"translators": ["אהוד מנור"],
 			"categoryIds": ["1"],
 			"lyrics": {
@@ -14196,7 +14199,7 @@
 			"id": 2000547,
 			"name": "זוהי יפו",
 			"singer": "אבי טולדנו",
-			"composers": ["משה", "ילנסקי"],
+			"composers": ["משה וילנסקי"],
 			"lyricists": ["יוסי גמזו"],
 			"categoryIds": ["1"],
 			"lyrics": {
@@ -14409,8 +14412,8 @@
 			"id": 2000563,
 			"name": "אחלה עולם",
 			"singer": "גידי גוב",
-			"composers": ["בוב ת׳יל", "ג׳ורג׳", "ייס"],
-			"lyricists": ["בוב ת׳יל", "ג׳ורג׳", "ייס"],
+			"composers": ["בוב ת׳יל", "ג׳ורג׳ וייס"],
+			"lyricists": ["בוב ת׳יל", "ג׳ורג׳ וייס"],
 			"translators": ["עלי מוהר", "מאור כהן"],
 			"categoryIds": ["1"],
 			"lyrics": {
@@ -15311,7 +15314,7 @@
 			"id": 2000632,
 			"name": "יד ביד (ולב אל לב)",
 			"singer": "ילדי הפסטיגל",
-			"composers": ["רוני", "ייס"],
+			"composers": ["רוני וייס"],
 			"lyricists": ["תלמה אליגון רוז"],
 			"categoryIds": ["1", "4"],
 			"lyrics": {
@@ -16798,7 +16801,7 @@
 			"id": 2000746,
 			"name": "איריסים",
 			"singer": "עפרה חזה",
-			"composers": ["יאניס", "ולה"],
+			"composers": ["יאניס וולה"],
 			"lyricists": ["חיים חפר"],
 			"categoryIds": ["1"],
 			"lyrics": {
@@ -17019,8 +17022,8 @@
 			"id": 3000001,
 			"name": "You've Got to Hide Your Love Away",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "V8nLraecPRY"
 			},
@@ -17150,8 +17153,8 @@
 			"id": 3000009,
 			"name": "Angie",
 			"singer": "The Rolling Stones",
-			"needsManualReview": true,
-			"unparsedString": "Error: 'utf-8' codec can't decode byte 0x96 in position 47: invalid start byte",
+			"composers": ["Mick Jagger, Keith Richards"],
+			"lyricists": ["Mick Jagger, Keith Richards"],
 			"playback": {
 				"youTubeVideoId": "RcZn2-bGXqQ"
 			},
@@ -17380,7 +17383,7 @@
 			"name": "Across the Universe",
 			"singer": "The Beatles",
 			"needsManualReview": true,
-			"unparsedString": "Across the universe – The beatles (-1)",
+			"unparsedString": "Across the universe – The beatles",
 			"playback": {
 				"youTubeVideoId": "90M60PzmxEE"
 			},
@@ -17428,7 +17431,7 @@
 			"name": "What's Up",
 			"singer": "4 Non Blondes",
 			"needsManualReview": true,
-			"unparsedString": "﻿Whats Up - 4 Non Blondes (+2)",
+			"unparsedString": "﻿Whats Up - 4 Non Blondes",
 			"playback": {
 				"youTubeVideoId": "6NXnxTNIWkc"
 			},
@@ -17560,8 +17563,8 @@
 			"id": 3000040,
 			"name": "I Want to Hold Your Hand",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "v1HDt1tknTc"
 			},
@@ -17708,7 +17711,7 @@
 			"name": "Under The Bridge",
 			"singer": "Red Hot Chilli Peppers",
 			"needsManualReview": true,
-			"unparsedString": "Under the Bridge – Red hot chilli peppers (+2)",
+			"unparsedString": "Under the Bridge – Red hot chilli peppers",
 			"playback": {
 				"youTubeVideoId": "lwlogyj7nFE"
 			},
@@ -17724,7 +17727,7 @@
 			"name": "Easy Like Sunday Morning",
 			"singer": "Faith No More",
 			"needsManualReview": true,
-			"unparsedString": "Faith no more – Easy Like Sunday Morning (+1)",
+			"unparsedString": "Faith no more – Easy Like Sunday Morning",
 			"playback": {
 				"youTubeVideoId": "vPzDTfIb0DU"
 			},
@@ -17773,7 +17776,7 @@
 			"name": "More Than Words",
 			"singer": "Exterme",
 			"needsManualReview": true,
-			"unparsedString": "More than words – Exterme (-1)",
+			"unparsedString": "More than words – Exterme",
 			"playback": {
 				"youTubeVideoId": "0R-FGchhwLw"
 			},
@@ -17789,7 +17792,7 @@
 			"name": "Bridge Over Troubled Water",
 			"singer": "Simon and Garfunkel",
 			"needsManualReview": true,
-			"unparsedString": "Bridge Over Troubled Water - Simon and Garfunkel (+3)",
+			"unparsedString": "Bridge Over Troubled Water - Simon and Garfunkel",
 			"playback": {
 				"youTubeVideoId": "4G-YQA_bsOU"
 			},
@@ -17951,7 +17954,7 @@
 			"name": "Secret Smile",
 			"singer": "Semisonic",
 			"needsManualReview": true,
-			"unparsedString": "Secret Smile – Semisonic (+1)",
+			"unparsedString": "Secret Smile – Semisonic",
 			"playback": {
 				"youTubeVideoId": "kryV3E4QKGk"
 			},
@@ -17967,7 +17970,7 @@
 			"name": "Against All Odds",
 			"singer": "Phil Collins",
 			"needsManualReview": true,
-			"unparsedString": "﻿Against all odds – Phil collins (+1)",
+			"unparsedString": "﻿Against all odds – Phil collins",
 			"playback": {
 				"youTubeVideoId": "uVjEcIANv1o"
 			},
@@ -18133,7 +18136,7 @@
 			"name": "California Dreamin'",
 			"singer": "The Mamas & The Papas",
 			"needsManualReview": true,
-			"unparsedString": "﻿California Dreamin' - The Mamas & The Papas (-1)",
+			"unparsedString": "﻿California Dreamin' - The Mamas & The Papas",
 			"playback": {
 				"youTubeVideoId": "N-aK6JnyFmk"
 			},
@@ -18149,7 +18152,7 @@
 			"name": "The Sound of Silence",
 			"singer": "Simon and Garfunkel",
 			"needsManualReview": true,
-			"unparsedString": "Sound Of Silence - Simon and Garfunkel (+1)",
+			"unparsedString": "Sound Of Silence - Simon and Garfunkel",
 			"playback": {
 				"youTubeVideoId": "nkUOACGtGfA"
 			},
@@ -18461,7 +18464,7 @@
 			"name": "I'm Still Standing",
 			"singer": "Elton John",
 			"needsManualReview": true,
-			"unparsedString": "﻿I'm Still Standing - Elton John (+1)",
+			"unparsedString": "﻿I'm Still Standing - Elton John",
 			"playback": {
 				"youTubeVideoId": "ZHwVBirqD2s"
 			},
@@ -18576,7 +18579,7 @@
 			"name": "Come As You Are",
 			"singer": "Nirvana",
 			"needsManualReview": true,
-			"unparsedString": "﻿Come As You Are - Nirvana (+1)",
+			"unparsedString": "﻿Come As You Are - Nirvana",
 			"playback": {
 				"youTubeVideoId": "1G8V6ta9Auk"
 			},
@@ -18592,7 +18595,7 @@
 			"name": "The Man Who Sold The World",
 			"singer": "Nirvana",
 			"needsManualReview": true,
-			"unparsedString": "﻿The Man Who Sold The World - Nirvana (-1)",
+			"unparsedString": "﻿The Man Who Sold The World - Nirvana",
 			"playback": {
 				"youTubeVideoId": "fregObNcHC8"
 			},
@@ -18624,7 +18627,7 @@
 			"name": "Walking On Sunshine",
 			"singer": "Katrina & The Waves",
 			"needsManualReview": true,
-			"unparsedString": "﻿Walking On Sunshine - Katrina & The Waves (+1)",
+			"unparsedString": "﻿Walking On Sunshine - Katrina & The Waves",
 			"playback": {
 				"youTubeVideoId": "iPUmE-tne5U"
 			},
@@ -18691,7 +18694,7 @@
 			"name": "Radio",
 			"singer": "The Corrs",
 			"needsManualReview": true,
-			"unparsedString": "﻿Radio - The Corrs (+2)",
+			"unparsedString": "﻿Radio - The Corrs",
 			"playback": {
 				"youTubeVideoId": "CIgummW6Utk"
 			},
@@ -18773,7 +18776,7 @@
 			"name": "Let It Go",
 			"singer": "Frozen",
 			"needsManualReview": true,
-			"unparsedString": "﻿Let It Go - Frozen (+1)",
+			"unparsedString": "﻿Let It Go - Frozen",
 			"playback": {
 				"youTubeVideoId": "moSFlvxnbgk"
 			},
@@ -18954,8 +18957,8 @@
 			"id": 3000149,
 			"name": "Ticket to ride",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "SyNt5zm3U_M"
 			},
@@ -19022,7 +19025,7 @@
 			"name": "Strong",
 			"singer": "Robbie Williams",
 			"needsManualReview": true,
-			"unparsedString": "﻿Strong - Robbie Williams (+1)",
+			"unparsedString": "﻿Strong - Robbie Williams",
 			"playback": {
 				"youTubeVideoId": "5-X91IstwqA"
 			},
@@ -19118,7 +19121,7 @@
 			"name": "Beat It",
 			"singer": "Michael Jackson",
 			"needsManualReview": true,
-			"unparsedString": "﻿Beat It - Michael Jackson  (-1)",
+			"unparsedString": "﻿Beat It - Michael Jackson ",
 			"playback": {
 				"youTubeVideoId": "oRdxUFDoQe0"
 			},
@@ -19231,7 +19234,7 @@
 			"name": "Just the two of us",
 			"singer": "Bill Withers",
 			"needsManualReview": true,
-			"unparsedString": "﻿Just the two of us - Bill Withers (+1)",
+			"unparsedString": "﻿Just the two of us - Bill Withers",
 			"playback": {
 				"youTubeVideoId": "jEy6MGu3bIA"
 			},
@@ -19344,8 +19347,8 @@
 			"id": 3000173,
 			"name": "Yesterday",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "NrgmdOz227I"
 			},
@@ -19574,7 +19577,7 @@
 			"name": "Basket Case",
 			"singer": "Green Day",
 			"needsManualReview": true,
-			"unparsedString": "﻿Basket Case - Green Day (+1)",
+			"unparsedString": "﻿Basket Case - Green Day",
 			"playback": {
 				"youTubeVideoId": "NUTGr5t3MoY"
 			},
@@ -19705,7 +19708,7 @@
 			"name": "Black velvet",
 			"singer": "Alannah Myles",
 			"needsManualReview": true,
-			"unparsedString": "﻿Black Velvet - Alannah Myles   (+1)",
+			"unparsedString": "﻿Black Velvet - Alannah Myles  ",
 			"playback": {
 				"youTubeVideoId": "tT4d1LQy4es"
 			},
@@ -19787,8 +19790,8 @@
 			"id": 3000200,
 			"name": "The Long And Winding Road",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "fR4HjTH_fTM"
 			},
@@ -19888,7 +19891,7 @@
 			"name": "Clocks",
 			"singer": "Coldplay",
 			"needsManualReview": true,
-			"unparsedString": "Clocks - Coldplay (+1)",
+			"unparsedString": "Clocks - Coldplay",
 			"playback": {
 				"youTubeVideoId": "XbI1FpLd4Vk"
 			},
@@ -20130,7 +20133,7 @@
 			"name": "Mmm Mmm Mmm Mmm",
 			"singer": "Crash Test Dummies",
 			"needsManualReview": true,
-			"unparsedString": "Mmm Mmm Mmm Mmm - Crash Test Dummies (-2)",
+			"unparsedString": "Mmm Mmm Mmm Mmm - Crash Test Dummies",
 			"playback": {
 				"youTubeVideoId": "eTeg1txDv8w"
 			},
@@ -20195,7 +20198,7 @@
 			"name": "If You Leave Me Now",
 			"singer": "Chicago",
 			"needsManualReview": true,
-			"unparsedString": "If You Leave Me Now - Chicago (-1)",
+			"unparsedString": "If You Leave Me Now - Chicago",
 			"playback": {
 				"youTubeVideoId": "-9_d-sFhmRM"
 			},
@@ -20359,7 +20362,7 @@
 			"name": "Mad World",
 			"singer": "Gary Jules",
 			"needsManualReview": true,
-			"unparsedString": "Mad World - Gary Jules (+1)",
+			"unparsedString": "Mad World - Gary Jules",
 			"playback": {
 				"youTubeVideoId": "4N3N1MlvVc4"
 			},
@@ -20473,7 +20476,7 @@
 			"name": "Killing Me Softly",
 			"singer": "Roberta Flack",
 			"needsManualReview": true,
-			"unparsedString": "Killing Me Softly - Roberta Flack (+1)",
+			"unparsedString": "Killing Me Softly - Roberta Flack",
 			"playback": {
 				"youTubeVideoId": "DEbi_YjpA-Y"
 			},
@@ -20489,7 +20492,7 @@
 			"name": "Private Emotion",
 			"singer": "Ricky Martin",
 			"needsManualReview": true,
-			"unparsedString": "Private Emotion - Ricky Martin (+1)",
+			"unparsedString": "Private Emotion - Ricky Martin",
 			"playback": {
 				"youTubeVideoId": "N-m9fn1yeEI"
 			},
@@ -20572,7 +20575,7 @@
 			"name": "About a Girl",
 			"singer": "Nirvana",
 			"needsManualReview": true,
-			"unparsedString": "About A Girl - Nirvana (+1)",
+			"unparsedString": "About A Girl - Nirvana",
 			"playback": {
 				"youTubeVideoId": "AhcttcXcRYY"
 			},
@@ -20588,7 +20591,7 @@
 			"name": "All Apologies",
 			"singer": "Nirvana",
 			"needsManualReview": true,
-			"unparsedString": "All Apologies - Nirvana (+1)",
+			"unparsedString": "All Apologies - Nirvana",
 			"playback": {
 				"youTubeVideoId": "aWmkuH1k7uA"
 			},
@@ -20620,8 +20623,8 @@
 			"id": 3000251,
 			"name": "Get Back",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "IKJqecxswCA"
 			},
@@ -20655,7 +20658,7 @@
 			"name": "Woman In Love",
 			"singer": "Barbra Streisand",
 			"needsManualReview": true,
-			"unparsedString": "Woman In Love - Barbra Streisand (+1)",
+			"unparsedString": "Woman In Love - Barbra Streisand",
 			"playback": {
 				"youTubeVideoId": "tskm5LWYmIM"
 			},
@@ -20705,7 +20708,7 @@
 			"name": "Woman",
 			"singer": "John Lennon",
 			"needsManualReview": true,
-			"unparsedString": "Woman - John Lennon (+1)",
+			"unparsedString": "Woman - John Lennon",
 			"playback": {
 				"youTubeVideoId": "Y0jTA0DtZvY"
 			},
@@ -20769,7 +20772,7 @@
 			"name": "Good Vibrations",
 			"singer": "Beach Boys",
 			"needsManualReview": true,
-			"unparsedString": "Good Vibrations - Beach Boys (+1)",
+			"unparsedString": "Good Vibrations - Beach Boys",
 			"playback": {
 				"youTubeVideoId": "Eab_beh07HU"
 			},
@@ -21348,8 +21351,8 @@
 			"id": 3000296,
 			"name": "The Fool On The Hill",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "rtnAI1hgNyI"
 			},
@@ -21429,8 +21432,8 @@
 			"id": 3000301,
 			"name": "Penny Lane",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "S-rB0pHI9fU"
 			},
@@ -21445,8 +21448,8 @@
 			"id": 3000302,
 			"name": "Please Please Me",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "czw8eqepir8"
 			},
@@ -21494,8 +21497,8 @@
 			"id": 3000305,
 			"name": "All My Loving",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "TSpiwK5fig0"
 			},
@@ -21510,8 +21513,8 @@
 			"id": 3000306,
 			"name": "A Day In The Life",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "usNsCeOV4GM"
 			},
@@ -21558,8 +21561,8 @@
 			"id": 3000309,
 			"name": "All You Need Is Love",
 			"singer": "The Beatles",
-			"composers": ["Lennon", "McCartney"],
-			"lyricists": ["Lennon", "McCartney"],
+			"composers": ["Paul McCartney", "John Lennon"],
+			"lyricists": ["Paul McCartney", "John Lennon"],
 			"playback": {
 				"youTubeVideoId": "_7xMfIp-irg"
 			},
@@ -21574,16 +21577,8 @@
 			"id": 3000310,
 			"name": "Everything I Do I Do It For You",
 			"singer": "Bryan Adams",
-			"composers": [
-				"Bryan Adams",
-				"Michael Kamen",
-				"Robert \"Mutt\" Lange"
-			],
-			"lyricists": [
-				"Bryan Adams",
-				"Michael Kamen",
-				"Robert \"Mutt\" Lange"
-			],
+			"composers": ["Bryan Adams", "Michael Kamen", "Robert Lange"],
+			"lyricists": ["Bryan Adams", "Michael Kamen", "Robert Lange"],
 			"playback": {
 				"youTubeVideoId": "aQh8Bi3aEm8"
 			},
@@ -23370,8 +23365,8 @@
 			"id": 4000193,
 			"name": "Uptown Funk",
 			"singer": "Bruno Mars",
-			"composers": ["Mark Ronson", "Bruno Mars", "more"],
-			"lyricists": ["Mark Ronson", "Bruno Mars", "more"],
+			"composers": ["Mark Ronson", "Bruno Mars", "Jeff Bhasker", "Philip Lawrence"],
+			"lyricists": ["Mark Ronson", "Bruno Mars", "Jeff Bhasker", "Philip Lawrence"],
 			"playback": {
 				"youTubeVideoId": "OPf0YbXqDm0"
 			},
