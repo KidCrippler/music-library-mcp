@@ -39,6 +39,12 @@ async def list_resources() -> list[Resource]:
     """List all available resources."""
     resources = [
         Resource(
+            uri="songs://schema",
+            name="Data Schema & Field Meanings",
+            description="Documentation explaining what each field in the song data represents. IMPORTANT: Read this first to understand field meanings, especially dateCreated/dateModified which are internal timestamps, NOT actual song creation dates.",
+            mimeType="application/json",
+        ),
+        Resource(
             uri="songs://list",
             name="All Songs",
             description="Browse all songs in the library with pagination",
@@ -175,7 +181,83 @@ async def read_resource(uri: str) -> str:
     path = parsed.path.lstrip("/")
 
     # Handle different resource paths
-    if path == "list":
+    if path == "schema":
+        schema_doc = {
+            "title": "Music Library Data Schema",
+            "description": "Field definitions and meanings for song data",
+            "important_notes": [
+                "⚠️ CRITICAL: dateCreated and dateModified are INTERNAL SYSTEM TIMESTAMPS for database management.",
+                "These fields DO NOT represent when the actual songs were created or released.",
+                "These timestamps relate to when entries were added/modified in the database system.",
+                "DO NOT use these fields to analyze song eras, release dates, or music history timelines."
+            ],
+            "song_fields": {
+                "id": {
+                    "type": "integer",
+                    "description": "Unique identifier for the song"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The song title"
+                },
+                "singer": {
+                    "type": "string",
+                    "description": "The performing artist or singer"
+                },
+                "composers": {
+                    "type": "array of strings",
+                    "description": "The person(s) who composed the music"
+                },
+                "lyricists": {
+                    "type": "array of strings",
+                    "description": "The person(s) who wrote the lyrics"
+                },
+                "translators": {
+                    "type": "array of strings",
+                    "description": "The person(s) who translated the lyrics (if applicable)",
+                    "optional": True
+                },
+                "categoryIds": {
+                    "type": "array of strings",
+                    "description": "IDs of categories this song belongs to (e.g., Hebrew, English, children's songs, etc.)"
+                },
+                "playback": {
+                    "type": "object",
+                    "description": "Playback information",
+                    "fields": {
+                        "youTubeVideoId": "The YouTube video ID for this song"
+                    }
+                },
+                "lyrics": {
+                    "type": "object",
+                    "description": "Lyrics information",
+                    "fields": {
+                        "markupUrl": "URL to the lyrics text file",
+                        "markupVersion": "Version of the markup format (optional)"
+                    }
+                },
+                "dateCreated": {
+                    "type": "timestamp (milliseconds)",
+                    "description": "⚠️ INTERNAL USE ONLY: Database entry creation timestamp. NOT the song's actual creation/release date.",
+                    "warning": "This is a system timestamp for when the entry was added to the database. It has nothing to do with when the song was actually written, recorded, or released."
+                },
+                "dateModified": {
+                    "type": "timestamp (milliseconds)",
+                    "description": "⚠️ INTERNAL USE ONLY: Database entry last modification timestamp. NOT when the song was modified.",
+                    "warning": "This is a system timestamp for when the database entry was last updated. It has nothing to do with the song itself."
+                }
+            },
+            "usage_guidelines": {
+                "analyzing_music_history": "Do NOT use dateCreated/dateModified fields. These are database timestamps, not music metadata.",
+                "finding_new_songs": "Use the 'newSongIds' array in the root data structure, not dateCreated.",
+                "timeline_analysis": "Date fields in this database cannot be used for temporal analysis of music trends or eras.",
+                "collaborations": "Use composer/lyricist fields to analyze creative partnerships.",
+                "categorization": "Use categoryIds and the categories list for genre and theme analysis."
+            }
+        }
+        return json.dumps(schema_doc, ensure_ascii=False, indent=2)
+
+    elif path == "list":
         songs = db.get_all_songs(limit=100)
         return json.dumps(songs, ensure_ascii=False, indent=2)
 
@@ -279,7 +361,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="search_songs",
-            description="Search for songs by name, artist, category, composer, lyricist, or translator. Supports partial matching.",
+            description="Search for songs by name, artist, category, composer, lyricist, or translator. Supports partial matching. IMPORTANT: Results include dateCreated/dateModified fields which are internal database timestamps, NOT actual song creation dates. See the schema resource for field meanings.",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -387,10 +469,17 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
             translator=translator
         )
 
+        # Wrap results with metadata note
+        response_data = {
+            "_note": "⚠️ IMPORTANT: dateCreated and dateModified are internal database timestamps, NOT actual song creation dates. See the schema resource (songs://schema) for complete field documentation.",
+            "result_count": len(results),
+            "songs": results
+        }
+
         return [
             TextContent(
                 type="text",
-                text=json.dumps(results, ensure_ascii=False, indent=2),
+                text=json.dumps(response_data, ensure_ascii=False, indent=2),
             )
         ]
 
