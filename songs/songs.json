@@ -7943,6 +7943,7 @@
 			"singer": "הנשמות הטהורות",
 			"composers": ["דודו ברק"],
 			"lyricists": ["נתן כהן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage6_dm.jpg"
@@ -8024,6 +8025,7 @@
 			"composers": ["אריאל רמירז"],
 			"lyricists": ["פליקס לונה"],
 			"translators": ["אהוד מנור"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage12_g.jpg"
@@ -8160,6 +8162,7 @@
 			"singer": "דני סנדרסון",
 			"composers": ["דני סנדרסון"],
 			"lyricists": ["מאיר אריאל"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage23_g.jpg"
@@ -8437,6 +8440,7 @@
 			"singer": "אל תקרא לי שחור",
 			"composers": ["בני נגרי"],
 			"lyricists": ["דן אלמגור"],
+			"isPrivate": true,
 			"categoryIds": ["1", "6"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage49_f.jpg"
@@ -9407,6 +9411,7 @@
 			"name": "רכב חברה",
 			"singer": "אפליקציה",
 			"needsManualReview": true,
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage148.jpg"
@@ -9691,6 +9696,7 @@
 			"singer": "ריטה",
 			"composers": ["רמי קלינשטיין"],
 			"lyricists": ["חנוך לוין"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage179_e.jpg"
@@ -9985,6 +9991,7 @@
 			"singer": "חני נחמיאס",
 			"composers": ["אילן גלבוע"],
 			"lyricists": ["אורי פסטר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage212_bb.jpg"
@@ -10079,6 +10086,7 @@
 			"singer": "תיסלם",
 			"composers": ["יזהר אשדות"],
 			"lyricists": ["דני בסן", "יאיר ניצני", "יושי שדה", "צוף פילוסוף"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage222.jpg"
@@ -10105,6 +10113,7 @@
 			"singer": "עידן חביב",
 			"composers": ["עידן חביב"],
 			"lyricists": ["עידן חביב"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage224_c%23m.jpg"
@@ -10183,6 +10192,7 @@
 			"singer": "הנשמות הטהורות",
 			"composers": ["נתן כהן"],
 			"lyricists": ["שמעון ספיר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage232_dm.jpg"
@@ -10827,6 +10837,7 @@
 			"singer": "גידי גוב",
 			"composers": ["יוני רכטר"],
 			"lyricists": ["עלי מוהר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage287.jpg"
@@ -10840,6 +10851,7 @@
 			"singer": "נוי דנן",
 			"composers": ["רן אביב"],
 			"lyricists": ["עינת הולנדר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage288.jpg"
@@ -10853,6 +10865,7 @@
 			"singer": "נוי דנן",
 			"composers": ["רן אביב"],
 			"lyricists": ["עינת הולנדר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"imageUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage288_em.jpg"
@@ -11159,6 +11172,7 @@
 			"singer": "החברים של בני",
 			"needsManualReview": true,
 			"unparsedString": "מחרוזת גשר הירקון – החברים של בני",
+			"isPrivate": true,
 			"categoryIds": ["1", "6"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage313.txt"
@@ -11350,6 +11364,7 @@
 			"singer": "יזהר כהן",
 			"composers": ["עוזי חיטמן"],
 			"lyricists": ["עוזי חיטמן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage327.txt"
@@ -11455,6 +11470,7 @@
 			"singer": "עממי",
 			"needsManualReview": true,
 			"unparsedString": "מחרוזת שבת - עממי",
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage335.txt"
@@ -11481,6 +11497,7 @@
 			"singer": "יהורם גאון",
 			"composers": ["הרברט פגני"],
 			"lyricists": ["תלמה אליגון רוז"],
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage337.txt",
@@ -12178,6 +12195,7 @@
 			"singer": "עידן רייכל",
 			"composers": ["עידן רייכל"],
 			"lyricists": ["דורון מדלי"],
+			"isPrivate": true,
 			"categoryIds": ["1", "4"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage391.txt"
@@ -12191,6 +12209,7 @@
 			"singer": "אייל גולן",
 			"composers": ["אביעד פניו"],
 			"lyricists": ["אביעד פניו"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage392.txt"
@@ -12217,6 +12236,7 @@
 			"singer": "עממי",
 			"needsManualReview": true,
 			"unparsedString": "מחרוזת ראש השנה - עממי",
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage395.txt"
@@ -12335,6 +12355,7 @@
 			"singer": "הדודאים והפרברים",
 			"composers": ["צבי שרף"],
 			"lyricists": ["צבי שרף"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage404.txt"
@@ -12413,6 +12434,7 @@
 			"singer": "נתן כהן",
 			"composers": ["נתן כהן"],
 			"lyricists": ["יואב פורת"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage410.txt"
@@ -12465,6 +12487,7 @@
 			"singer": "אבי דור",
 			"composers": ["מירון מינסטר"],
 			"lyricists": ["אבי דור"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage414.txt"
@@ -12570,6 +12593,7 @@
 			"singer": "נילי בוברובסקי",
 			"composers": ["נילי בוברובסקי"],
 			"lyricists": ["שירלי בוברובסקי"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage422.txt"
@@ -12661,6 +12685,7 @@
 			"singer": "איזולירבנד",
 			"composers": ["רוני וייס"],
 			"lyricists": ["לאה לופנפלד"],
+			"isPrivate": true,
 			"categoryIds": ["1", "7"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage430.txt"
@@ -12792,6 +12817,7 @@
 			"singer": "זוהר ארגוב",
 			"composers": ["רפי גבאי"],
 			"lyricists": ["זמירה חן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage440.txt"
@@ -12805,6 +12831,7 @@
 			"singer": "הפרוייקט של עידן רייכל",
 			"composers": ["עידן רייכל"],
 			"lyricists": ["עידן רייכל"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage441.txt"
@@ -12844,6 +12871,7 @@
 			"singer": "הפרברים",
 			"composers": ["תלמה אליגון רוז"],
 			"lyricists": ["תלמה אליגון רוז"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage444.txt"
@@ -12935,6 +12963,7 @@
 			"singer": "עידן חיים דוד",
 			"composers": ["עידן חיים דוד"],
 			"lyricists": ["עידן חיים דוד"],
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage451.txt"
@@ -12962,6 +12991,7 @@
 			"composers": ["ז'וליניו דו אקורדאון"],
 			"lyricists": ["ז'ואאו דו ואלה"],
 			"translators": ["אהוד מנור"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage453.txt"
@@ -13210,6 +13240,7 @@
 			"singer": "ג׳ימבו ג׳יי ורביד פלוטניק",
 			"composers": ["ג׳ימבו ג׳יי", "אוריה", "יצטום"],
 			"lyricists": ["ג׳ימבו ג׳יי", "רביד פלוטניק"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage472.txt"
@@ -13279,6 +13310,7 @@
 			"singer": "להקת פיקוד דרום",
 			"composers": ["יאיר רוזנבלום"],
 			"lyricists": ["יורם טהרלב"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage477.txt"
@@ -13292,6 +13324,7 @@
 			"singer": "רבקה זוהר",
 			"composers": ["יאיר רוזנבלום"],
 			"lyricists": ["יורם טהרלב"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage478.txt"
@@ -13305,6 +13338,7 @@
 			"singer": "הפרברים",
 			"composers": ["יוסף שריג"],
 			"lyricists": ["יוסף שריג"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage479.txt"
@@ -13318,6 +13352,7 @@
 			"singer": "צמד דרום",
 			"composers": ["עקיבא נוף"],
 			"lyricists": ["עקיבא נוף"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage480.txt"
@@ -13331,6 +13366,7 @@
 			"singer": "יהורם גאון",
 			"composers": ["אלי רובינשטיין"],
 			"lyricists": ["עמוס אטינגר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage481.txt"
@@ -13344,6 +13380,7 @@
 			"singer": "נעמי שמר",
 			"composers": ["נעמי שמר"],
 			"lyricists": ["נעמי שמר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage482.txt"
@@ -13397,6 +13434,7 @@
 			"singer": "עידן עמדי",
 			"composers": ["עידן עמדי"],
 			"lyricists": ["עידן עמדי"],
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage486.txt"
@@ -13463,6 +13501,7 @@
 			"singer": "נדב כהן",
 			"composers": ["ערן יופה"],
 			"lyricists": ["נדב כהן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage491.txt"
@@ -13529,6 +13568,7 @@
 			"singer": "הפרברים",
 			"composers": ["נחום היימן"],
 			"lyricists": ["נתן אלתרמן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage496.txt"
@@ -13542,6 +13582,7 @@
 			"singer": "הפרברים",
 			"composers": ["סשה ארגוב"],
 			"lyricists": ["יורם טהרלב"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage497.txt"
@@ -13555,6 +13596,7 @@
 			"singer": "הפרברים",
 			"composers": ["עילי בוטנר"],
 			"lyricists": ["עילי בוטנר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage498.txt"
@@ -13646,6 +13688,7 @@
 			"singer": "הפרברים",
 			"composers": ["דניאל סמבורסקי"],
 			"lyricists": ["נתן אלתרמן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage505.txt"
@@ -13935,6 +13978,7 @@
 			"singer": "אוהד חיטמן",
 			"composers": ["אוהד חיטמן"],
 			"lyricists": ["עוזי חיטמן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage527.txt"
@@ -14040,6 +14084,7 @@
 			"singer": "משה דץ",
 			"composers": ["נחום היימן"],
 			"lyricists": ["נתן יונתן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage535.txt"
@@ -14109,6 +14154,7 @@
 			"singer": "כוורת",
 			"composers": ["דני סנדרסון"],
 			"lyricists": ["דני סנדרסון"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage540.txt"
@@ -14188,6 +14234,7 @@
 			"singer": "להקת הנחל",
 			"composers": ["סשה ארגוב"],
 			"lyricists": ["חיים גורי"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage546.txt"
@@ -14241,6 +14288,7 @@
 			"composers": ["מטביי בלנטר"],
 			"lyricists": ["מיכאל איסקובסקי"],
 			"translators": ["נח פניאל"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage550.txt"
@@ -14255,6 +14303,7 @@
 			"composers": ["אנטולי נוביקוב"],
 			"lyricists": ["יאקוב שבדוב"],
 			"translators": ["עידית חכמוביץ'"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage551.txt",
@@ -14269,6 +14318,7 @@
 			"singer": "שייקה לוי",
 			"composers": ["יוני רועה"],
 			"lyricists": ["דודו ברק"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage552.txt"
@@ -14321,6 +14371,7 @@
 			"singer": "אריק איינשטיין",
 			"composers": ["יוני רכטר"],
 			"lyricists": ["תרצה אתר"],
+			"isPrivate": true,
 			"categoryIds": ["1", "4"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage556.txt"
@@ -14386,6 +14437,7 @@
 			"singer": "עממי",
 			"needsManualReview": true,
 			"unparsedString": "מחרוזת הורה",
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage561.txt",
@@ -14400,6 +14452,7 @@
 			"singer": "עממי",
 			"needsManualReview": true,
 			"unparsedString": "מחרוזת שבועות",
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage562.txt",
@@ -14415,6 +14468,7 @@
 			"composers": ["בוב ת׳יל", "ג׳ורג׳ וייס"],
 			"lyricists": ["בוב ת׳יל", "ג׳ורג׳ וייס"],
 			"translators": ["עלי מוהר", "מאור כהן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage563.txt"
@@ -14441,6 +14495,7 @@
 			"singer": "עממי",
 			"composers": ["ידידיה אמון"],
 			"lyricists": ["לוין קיפניס"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage565.txt"
@@ -14467,6 +14522,7 @@
 			"singer": "חוה אלברשטיין",
 			"composers": ["מישה סגל"],
 			"lyricists": ["נתן זך"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage567.txt"
@@ -14572,6 +14628,7 @@
 			"singer": "הגבעטרון",
 			"composers": ["מרדכי זעירא"],
 			"lyricists": ["מרדכי זעירא"],
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage575.txt"
@@ -14585,6 +14642,7 @@
 			"singer": "תנועות הנוער",
 			"composers": ["דניאל סמבורסקי"],
 			"lyricists": ["נתן אלתרמן"],
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage576.txt"
@@ -14599,6 +14657,7 @@
 			"composers": ["ג'. פונומרנקו"],
 			"lyricists": ["ואסילי אלפרוב"],
 			"translators": ["יורם טהרלב"],
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage577.txt"
@@ -14652,6 +14711,7 @@
 			"singer": "חוה אלברשטיין",
 			"composers": ["נחצ'ה היימן"],
 			"lyricists": ["אהוד מנור"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage581.txt"
@@ -14665,6 +14725,7 @@
 			"singer": "חוה אלברשטיין",
 			"composers": ["מתי כספי"],
 			"lyricists": ["יורם טהרלב"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage582.txt"
@@ -14678,6 +14739,7 @@
 			"singer": "חוה אלברשטיין",
 			"composers": ["מתי כספי"],
 			"lyricists": ["יורם טהרלב"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage583.txt"
@@ -14691,6 +14753,7 @@
 			"singer": "עמנואל זמיר",
 			"composers": ["עמנואל זמיר"],
 			"lyricists": ["עמנואל זמיר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage584.txt"
@@ -14704,6 +14767,7 @@
 			"singer": "עמנואל זמיר",
 			"composers": ["עמנואל זמיר"],
 			"lyricists": ["עמנואל זמיר"],
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage585.txt"
@@ -14730,6 +14794,7 @@
 			"singer": "תנועות הנוער",
 			"composers": ["וילהלם גרוס"],
 			"lyricists": ["לא ידוע"],
+			"isPrivate": true,
 			"categoryIds": ["1", "5"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage587.txt"
@@ -14743,6 +14808,7 @@
 			"singer": "תנועות הנוער",
 			"composers": ["דניאל סמבורסקי"],
 			"lyricists": ["יצחק שנהר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage588.txt"
@@ -14756,6 +14822,7 @@
 			"singer": "עמנואל זמיר",
 			"composers": ["עמנואל זמיר"],
 			"lyricists": ["עמנואל זמיר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage589.txt"
@@ -14939,6 +15006,7 @@
 			"singer": "הבנימינים",
 			"composers": ["דב פרנקל"],
 			"lyricists": ["זאב ז'בוטינסקי"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage603.txt"
@@ -14978,6 +15046,7 @@
 			"singer": "דתיה בן דור",
 			"composers": ["דתיה בן-דור"],
 			"lyricists": ["דתיה בן-דור"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage606.txt"
@@ -15199,6 +15268,7 @@
 			"singer": "גיא רפפורט",
 			"composers": ["גיא רפפורט"],
 			"lyricists": ["גיא רפפורט"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage623.txt"
@@ -15381,6 +15451,7 @@
 			"singer": "חנן יובל ודודו אלהרר",
 			"composers": ["חנן יובל"],
 			"lyricists": ["עדית פאנק"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage637.txt"
@@ -15394,6 +15465,7 @@
 			"singer": "אילנית",
 			"composers": ["יאיר רוזנבלום"],
 			"lyricists": ["דודו ברק"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage638.txt"
@@ -15524,6 +15596,7 @@
 			"singer": "אריק איינשטיין",
 			"composers": ["יוני רכטר"],
 			"lyricists": ["לאה גולדברג"],
+			"isPrivate": true,
 			"categoryIds": ["1", "4"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage648.txt"
@@ -15616,6 +15689,7 @@
 			"singer": "עממי",
 			"composers": ["עממי"],
 			"lyricists": ["מהמקורות"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage655.txt"
@@ -15629,6 +15703,7 @@
 			"singer": "יאיר רוזנבלום ועוזי חיטמן",
 			"composers": ["יאיר רוזנבלום"],
 			"lyricists": ["יאיר רוזנבלום"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage656.txt"
@@ -15655,6 +15730,7 @@
 			"singer": "עממי",
 			"needsManualReview": true,
 			"unparsedString": "מחרוזת פורים",
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage658.txt",
@@ -15669,6 +15745,7 @@
 			"singer": "שלישיית גשר הירקון",
 			"composers": ["עממי אירי"],
 			"lyricists": ["יוסי גמזו"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage659.txt",
@@ -15683,6 +15760,7 @@
 			"singer": "עממי",
 			"composers": ["מרדכי זעירא"],
 			"lyricists": ["יעקב אורלנד"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage660.txt"
@@ -15710,6 +15788,7 @@
 			"singer": "אסתר עופרים",
 			"composers": ["מרדכי זעירא"],
 			"lyricists": ["יצחק שנהר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage662.txt"
@@ -15723,6 +15802,7 @@
 			"singer": "יפה ירקוני",
 			"composers": ["עממי איטלקי"],
 			"lyricists": ["חיים חפר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage663.txt"
@@ -15762,6 +15842,7 @@
 			"singer": "נועה קירל",
 			"composers": ["דורון מדלי", "ינון יהל", "מאי ספדיה", "נועה קירל"],
 			"lyricists": ["דורון מדלי", "ינון יהל", "מאי ספדיה", "נועה קירל"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage666.txt"
@@ -15892,6 +15973,7 @@
 			"singer": "צוות הווי גולני",
 			"composers": ["אריה לבנון"],
 			"lyricists": ["דליה רביקוביץ'"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage676.txt"
@@ -15918,6 +16000,7 @@
 			"singer": "חוה אלברשטיין",
 			"composers": ["נורית הירש"],
 			"lyricists": ["רחל שפירא"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage678.txt"
@@ -15983,6 +16066,7 @@
 			"singer": "סמיר שוקרי",
 			"composers": ["עממי"],
 			"lyricists": ["יפית אביטן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage683.txt"
@@ -16035,6 +16119,7 @@
 			"singer": "עממי",
 			"composers": ["חנינא קרצבסקי"],
 			"lyricists": ["ישראל דושמן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage687.txt"
@@ -16061,6 +16146,7 @@
 			"singer": "אלי גופר ויובל גורן",
 			"composers": ["יובל גורן"],
 			"lyricists": ["אלי גופר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage689.txt"
@@ -16074,6 +16160,7 @@
 			"singer": "יובל גורן ושניר אור לוי",
 			"composers": ["יובל גורן"],
 			"lyricists": ["שניר אור לוי"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage690.txt"
@@ -16243,6 +16330,7 @@
 			"singer": "הגבעטרון",
 			"composers": ["יאיר רוזנבלום"],
 			"lyricists": ["רבי אמנון ממגנצא"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage703.txt"
@@ -16256,6 +16344,7 @@
 			"singer": "מוטי עזו",
 			"composers": ["מוטי עזו"],
 			"lyricists": ["מוטי עזו"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage704.txt"
@@ -16465,6 +16554,7 @@
 			"singer": "נעמי שמר",
 			"composers": ["נעמי שמר"],
 			"lyricists": ["נעמי שמר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage720.txt"
@@ -16478,6 +16568,7 @@
 			"singer": "להקת הנחל",
 			"composers": ["נעמי שמר"],
 			"lyricists": ["נעמי שמר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage721.txt"
@@ -16491,6 +16582,7 @@
 			"singer": "זאב רווח",
 			"composers": ["נורית הירש"],
 			"lyricists": ["חיים חפר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage722.txt"
@@ -16504,6 +16596,7 @@
 			"singer": "חוה אלברשטיין",
 			"composers": ["נורית הירש"],
 			"lyricists": ["לאה נאור"],
+			"isPrivate": true,
 			"categoryIds": ["1", "4"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage723.txt"
@@ -16530,6 +16623,7 @@
 			"singer": "עממי",
 			"composers": ["עממי"],
 			"lyricists": ["מתוך תהילים"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage725.txt"
@@ -16556,6 +16650,7 @@
 			"singer": "יובל המבולבל",
 			"composers": ["אסי טל"],
 			"lyricists": ["יובל המבולבל"],
+			"isPrivate": true,
 			"categoryIds": ["1", "4"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage727.txt"
@@ -16608,6 +16703,7 @@
 			"singer": "אמיר פיי גוטמן",
 			"composers": ["אמיר פיי גוטמן"],
 			"lyricists": ["אמיר פיי גוטמן", "נועה ברנר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage731.txt"
@@ -16634,6 +16730,7 @@
 			"singer": "הגבעטרון",
 			"composers": ["נחום היימן"],
 			"lyricists": ["מהמקורות"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage733.txt"
@@ -16660,6 +16757,7 @@
 			"singer": "הגבעטרון",
 			"composers": ["חיים אגמון"],
 			"lyricists": ["יצחק קינן"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage735.txt"
@@ -16712,6 +16810,7 @@
 			"singer": "להקת פיקוד מרכז",
 			"composers": ["נעמי שמר"],
 			"lyricists": ["נעמי שמר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage739.txt"
@@ -16751,6 +16850,7 @@
 			"singer": "תיקי דיין",
 			"composers": ["מתי כספי"],
 			"lyricists": ["אהוד מנור"],
+			"isPrivate": true,
 			"categoryIds": ["1", "4"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage742.txt"
@@ -16777,6 +16877,7 @@
 			"singer": "בלי סודות",
 			"composers": ["שלמה יידוב"],
 			"lyricists": ["אילנה לופט"],
+			"isPrivate": true,
 			"categoryIds": ["1", "4"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage744.txt"
@@ -16842,6 +16943,7 @@
 			"singer": "התרנגולים",
 			"composers": ["סשה ארגוב"],
 			"lyricists": ["חיים חפר"],
+			"isPrivate": true,
 			"categoryIds": ["1"],
 			"lyrics": {
 				"markupUrl": "https://raw.githubusercontent.com/KidCrippler/songs/master/hebrew_alon/apage749.txt"
