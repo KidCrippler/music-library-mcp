@@ -76,12 +76,6 @@ async def list_resources() -> list[Resource]:
             mimeType="application/json",
         ),
         Resource(
-            uri="songs://translators",
-            name="All Translators",
-            description="List all translators with song counts",
-            mimeType="application/json",
-        ),
-        Resource(
             uri="songs://collaborations",
             name="All Collaborations",
             description="List all lyricist-composer collaborations sorted by song count",
@@ -95,56 +89,8 @@ async def list_resources() -> list[Resource]:
         ),
     ]
 
-    # Add dynamic resources for each artist
-    artists = db.get_all_artists()
-    for artist in artists[:50]:  # Limit to first 50 to avoid overwhelming the list
-        resources.append(
-            Resource(
-                uri=f"songs://artist/{artist['name']}",
-                name=f"Songs by {artist['name']}",
-                description=f"All songs by {artist['name']} ({artist['song_count']} songs)",
-                mimeType="application/json",
-            )
-        )
-
-    # Add dynamic resources for each composer
-    composers = db.get_all_composers()
-    for composer in composers[:50]:  # Limit to first 50 to avoid overwhelming the list
-        resources.append(
-            Resource(
-                uri=f"songs://composer/{composer['name']}",
-                name=f"Songs composed by {composer['name']}",
-                description=f"All songs composed by {composer['name']} ({composer['song_count']} songs)",
-                mimeType="application/json",
-            )
-        )
-
-    # Add dynamic resources for each lyricist
-    lyricists = db.get_all_lyricists()
-    for lyricist in lyricists[:50]:  # Limit to first 50 to avoid overwhelming the list
-        resources.append(
-            Resource(
-                uri=f"songs://lyricist/{lyricist['name']}",
-                name=f"Songs with lyrics by {lyricist['name']}",
-                description=f"All songs with lyrics by {lyricist['name']} ({lyricist['song_count']} songs)",
-                mimeType="application/json",
-            )
-        )
-
-    # Add dynamic resources for each translator
-    translators = db.get_all_translators()
-    for translator in translators[:50]:  # Limit to first 50 to avoid overwhelming the list
-        resources.append(
-            Resource(
-                uri=f"songs://translator/{translator['name']}",
-                name=f"Songs translated by {translator['name']}",
-                description=f"All songs translated by {translator['name']} ({translator['song_count']} songs)",
-                mimeType="application/json",
-            )
-        )
-
     # Add dynamic resources for top collaborations
-    collaborations = db.get_all_collaborations(limit=30)  # Top 30 collaborations
+    collaborations = db.get_all_collaborations(limit=10)  # Top 10 collaborations
     for collab in collaborations:
         lyricist = collab['lyricist']
         composer = collab['composer']
@@ -213,11 +159,6 @@ async def read_resource(uri: str) -> str:
                     "type": "array of strings",
                     "description": "The person(s) who wrote the lyrics"
                 },
-                "translators": {
-                    "type": "array of strings",
-                    "description": "The person(s) who translated the lyrics (if applicable)",
-                    "optional": True
-                },
                 "categoryIds": {
                     "type": "array of strings",
                     "description": "IDs of categories this song belongs to (e.g., Hebrew, English, children's songs, etc.)"
@@ -278,9 +219,6 @@ async def read_resource(uri: str) -> str:
         lyricists = db.get_all_lyricists()
         return json.dumps(lyricists, ensure_ascii=False, indent=2)
 
-    elif path == "translators":
-        translators = db.get_all_translators()
-        return json.dumps(translators, ensure_ascii=False, indent=2)
 
     elif path == "collaborations":
         collaborations = db.get_all_collaborations(limit=100)
@@ -318,12 +256,6 @@ async def read_resource(uri: str) -> str:
             raise ValueError(f"No songs found for lyricist: {lyricist_name}")
         return json.dumps(songs, ensure_ascii=False, indent=2)
 
-    elif path.startswith("translator/"):
-        translator_name = path.split("/", 1)[1]
-        songs = db.get_songs_by_translator(translator_name)
-        if not songs:
-            raise ValueError(f"No songs found for translator: {translator_name}")
-        return json.dumps(songs, ensure_ascii=False, indent=2)
 
     elif path.startswith("collaboration/"):
         # Parse lyricist/composer from path
@@ -362,7 +294,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="search_songs",
-            description="Search for songs by name, artist, category, composer, lyricist, or translator. Supports partial matching. IMPORTANT: Results include dateCreated/dateModified fields which are internal database timestamps, NOT actual song creation dates. See the schema resource for field meanings.",
+            description="Search for songs by name, artist, category, composer, or lyricist. Supports partial matching. IMPORTANT: Results include dateCreated/dateModified fields which are internal database timestamps, NOT actual song creation dates. See the schema resource for field meanings.",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -385,10 +317,6 @@ async def list_tools() -> list[Tool]:
                     "lyricist": {
                         "type": "string",
                         "description": "Filter by lyricist name (optional)",
-                    },
-                    "translator": {
-                        "type": "string",
-                        "description": "Filter by translator name (optional)",
                     },
                 },
             },
@@ -446,6 +374,24 @@ async def list_tools() -> list[Tool]:
                 },
             },
         ),
+        Tool(
+            name="get_random_discovery",
+            description="Get random songs, artists, composers, and lyricists for discovery, each with a fame score (0-100 rank). Results are sorted by fame score (most famous first). Useful for exploring the library and understanding the prominence of different contributors. Supports filtering by language (Hebrew/English/Both).",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "language": {
+                        "type": "string",
+                        "description": "Filter by language: 'hebrew', 'english', or 'both' (default: 'both')",
+                        "enum": ["hebrew", "english", "both"],
+                    },
+                    "count": {
+                        "type": "number",
+                        "description": "Number of items to return for each category (default: 10)",
+                    },
+                },
+            },
+        ),
     ]
 
 
@@ -459,15 +405,13 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         category_id = arguments.get("category_id")
         composer = arguments.get("composer")
         lyricist = arguments.get("lyricist")
-        translator = arguments.get("translator")
 
         results = db.search_songs(
             query=query,
             artist=artist,
             category_id=category_id,
             composer=composer,
-            lyricist=lyricist,
-            translator=translator
+            lyricist=lyricist
         )
 
         # Wrap results with metadata note
@@ -595,6 +539,19 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
             )
         ]
 
+    elif name == "get_random_discovery":
+        language = arguments.get("language", "both")
+        count = arguments.get("count", 10)
+        
+        result = db.get_random_discovery(language=language, count=count)
+        
+        return [
+            TextContent(
+                type="text",
+                text=json.dumps(result, ensure_ascii=False, indent=2),
+            )
+        ]
+
     else:
         raise ValueError(f"Unknown tool: {name}")
 
@@ -652,16 +609,16 @@ async def list_prompts() -> list[Prompt]:
         ),
         Prompt(
             name="explore_contributor",
-            description="Deep dive into a composer, lyricist, or translator's work with analysis and insights",
+            description="Deep dive into a composer or lyricist's work with analysis and insights",
             arguments=[
                 {
                     "name": "contributor_name",
-                    "description": "The name of the composer, lyricist, or translator to explore",
+                    "description": "The name of the composer or lyricist to explore",
                     "required": True,
                 },
                 {
                     "name": "contributor_type",
-                    "description": "Type of contributor: 'composer', 'lyricist', or 'translator'",
+                    "description": "Type of contributor: 'composer' or 'lyricist'",
                     "required": True,
                 }
             ],
@@ -705,7 +662,7 @@ Please provide:
 1. An overview of their musical presence in this library ({len(songs)} songs)
 2. The categories/genres they appear in
 3. Any patterns in their song titles or themes
-4. Notable collaborations with composers, lyricists, and translators
+4. Notable collaborations with composers and lyricists
 5. Notable songs or recommendations from their collection
 """
 
@@ -819,11 +776,8 @@ Please:
         elif contributor_type == "lyricist":
             songs = db.get_songs_by_lyricist(contributor_name)
             role_desc = "wrote lyrics for"
-        elif contributor_type == "translator":
-            songs = db.get_songs_by_translator(contributor_name)
-            role_desc = "translated"
         else:
-            prompt_text = f"Invalid contributor type: {contributor_type}. Must be 'composer', 'lyricist', or 'translator'."
+            prompt_text = f"Invalid contributor type: {contributor_type}. Must be 'composer' or 'lyricist'."
             return GetPromptResult(
                 description=f"Error exploring contributor",
                 messages=[
@@ -847,7 +801,7 @@ Please provide:
 2. The artists they worked with most frequently
 3. The categories/genres they contributed to
 4. Any patterns in the songs they worked on (themes, styles, eras)
-5. Notable collaborations with other composers, lyricists, or translators
+5. Notable collaborations with other composers or lyricists
 6. Their most significant or representative works from this collection
 """
 

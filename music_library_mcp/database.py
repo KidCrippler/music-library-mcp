@@ -420,3 +420,205 @@ class SongsDatabase:
                 for cat in self.categories
             ]
         }
+
+    def _calculate_fame_rank(self, song_count: int, all_counts: list[int]) -> int:
+        """Calculate fame rank (0-100) based on percentile.
+        
+        Higher rank = more famous. Rank of 100 = most prolific, 0 = least.
+        """
+        if not all_counts or song_count == 0:
+            return 0
+        
+        # Count how many have fewer songs
+        fewer_count = sum(1 for count in all_counts if count < song_count)
+        
+        # Calculate percentile rank (0-100)
+        rank = int((fewer_count / len(all_counts)) * 100)
+        return rank
+
+    def get_random_discovery(
+        self,
+        language: str = "both",
+        count: int = 10
+    ) -> dict[str, Any]:
+        """Get random songs, artists, composers, and lyricists for discovery with fame scores.
+        
+        Args:
+            language: Filter by language - "hebrew", "english", or "both"
+            count: Number of items to return for each category (default: 10)
+            
+        Returns:
+            Dictionary with random songs, artists, composers, and lyricists, all with fame scores.
+            Results are sorted by fame score (most famous first) within each category.
+        """
+        import random
+        
+        # Determine which songs to sample from based on language filter
+        if language.lower() == "hebrew":
+            # Find Hebrew category ID by searching categories
+            hebrew_cat_id = None
+            for cat in self.categories:
+                if cat.get('name', '').lower() in ['עברית', 'hebrew']:
+                    hebrew_cat_id = cat.get('id')
+                    break
+            
+            if hebrew_cat_id:
+                filtered_songs = self.songs_by_category.get(hebrew_cat_id, [])
+            else:
+                filtered_songs = self.songs
+                
+        elif language.lower() == "english":
+            # Find English category ID by searching categories
+            english_cat_id = None
+            for cat in self.categories:
+                if cat.get('name', '').lower() in ['english', 'אנגלית']:
+                    english_cat_id = cat.get('id')
+                    break
+            
+            if english_cat_id:
+                filtered_songs = self.songs_by_category.get(english_cat_id, [])
+            else:
+                filtered_songs = self.songs
+        else:
+            # Both - use all songs
+            filtered_songs = self.songs
+        
+        # Sample random songs
+        sample_size = min(count, len(filtered_songs))
+        random_songs = random.sample(filtered_songs, sample_size) if sample_size > 0 else []
+        
+        # Extract unique artists, composers, lyricists from filtered songs
+        artists_set = set()
+        composers_set = set()
+        lyricists_set = set()
+        
+        for song in filtered_songs:
+            artist = song.get('singer', '').strip()
+            if artist:
+                artists_set.add(artist)
+            
+            for composer in song.get('composers', []):
+                if composer:
+                    composers_set.add(composer)
+            
+            for lyricist in song.get('lyricists', []):
+                if lyricist:
+                    lyricists_set.add(lyricist)
+        
+        # Sample from each set
+        artists_sample = random.sample(list(artists_set), min(count, len(artists_set))) if artists_set else []
+        composers_sample = random.sample(list(composers_set), min(count, len(composers_set))) if composers_set else []
+        lyricists_sample = random.sample(list(lyricists_set), min(count, len(lyricists_set))) if lyricists_set else []
+        
+        # Get all song counts for rank calculation
+        all_artist_counts = [len(songs) for songs in self.songs_by_artist.values()]
+        all_composer_counts = [len(songs) for songs in self.songs_by_composer.values()]
+        all_lyricist_counts = [len(songs) for songs in self.songs_by_lyricist.values()]
+        
+        # Build cache for contributor fame scores
+        artist_fame_cache = {}
+        composer_fame_cache = {}
+        lyricist_fame_cache = {}
+        
+        # Calculate fame scores for artists
+        artists_with_fame = []
+        for artist in artists_sample:
+            artist_key = artist.lower()
+            song_count = len(self.songs_by_artist.get(artist_key, []))
+            fame_rank = self._calculate_fame_rank(song_count, all_artist_counts)
+            artist_fame_cache[artist_key] = fame_rank
+            artists_with_fame.append({
+                'name': artist,
+                'song_count': song_count,
+                'fame_score': fame_rank
+            })
+        
+        # Calculate fame scores for composers
+        composers_with_fame = []
+        for composer in composers_sample:
+            composer_key = composer.lower().strip()
+            song_count = len(self.songs_by_composer.get(composer_key, []))
+            fame_rank = self._calculate_fame_rank(song_count, all_composer_counts)
+            composer_fame_cache[composer_key] = fame_rank
+            composers_with_fame.append({
+                'name': composer,
+                'song_count': song_count,
+                'fame_score': fame_rank
+            })
+        
+        # Calculate fame scores for lyricists
+        lyricists_with_fame = []
+        for lyricist in lyricists_sample:
+            lyricist_key = lyricist.lower().strip()
+            song_count = len(self.songs_by_lyricist.get(lyricist_key, []))
+            fame_rank = self._calculate_fame_rank(song_count, all_lyricist_counts)
+            lyricist_fame_cache[lyricist_key] = fame_rank
+            lyricists_with_fame.append({
+                'name': lyricist,
+                'song_count': song_count,
+                'fame_score': fame_rank
+            })
+        
+        # Calculate composite fame scores for songs
+        # Weights: artist (heavy), composer (modest), lyricist (modest)
+        enriched_songs = []
+        for song in random_songs:
+            # Get artist fame (heavy weight: 0.6)
+            artist_key = song.get('singer', '').lower()
+            if artist_key not in artist_fame_cache:
+                song_count = len(self.songs_by_artist.get(artist_key, []))
+                artist_fame_cache[artist_key] = self._calculate_fame_rank(song_count, all_artist_counts)
+            artist_fame = artist_fame_cache[artist_key]
+            
+            # Get average composer fame (modest weight: 0.25)
+            composers = song.get('composers', [])
+            composer_fames = []
+            for composer in composers:
+                composer_key = composer.lower().strip()
+                if composer_key not in composer_fame_cache:
+                    song_count = len(self.songs_by_composer.get(composer_key, []))
+                    composer_fame_cache[composer_key] = self._calculate_fame_rank(song_count, all_composer_counts)
+                composer_fames.append(composer_fame_cache[composer_key])
+            avg_composer_fame = sum(composer_fames) / len(composer_fames) if composer_fames else 0
+            
+            # Get average lyricist fame (modest weight: 0.15)
+            lyricists = song.get('lyricists', [])
+            lyricist_fames = []
+            for lyricist in lyricists:
+                lyricist_key = lyricist.lower().strip()
+                if lyricist_key not in lyricist_fame_cache:
+                    song_count = len(self.songs_by_lyricist.get(lyricist_key, []))
+                    lyricist_fame_cache[lyricist_key] = self._calculate_fame_rank(song_count, all_lyricist_counts)
+                lyricist_fames.append(lyricist_fame_cache[lyricist_key])
+            avg_lyricist_fame = sum(lyricist_fames) / len(lyricist_fames) if lyricist_fames else 0
+            
+            # Calculate composite fame score
+            composite_fame = int(
+                artist_fame * 0.6 +
+                avg_composer_fame * 0.25 +
+                avg_lyricist_fame * 0.15
+            )
+            
+            enriched_song = song.copy()
+            enriched_song['fame_score'] = composite_fame
+            enriched_songs.append(enriched_song)
+        
+        # Sort all results by fame score (descending - most famous first)
+        artists_with_fame.sort(key=lambda x: x['fame_score'], reverse=True)
+        composers_with_fame.sort(key=lambda x: x['fame_score'], reverse=True)
+        lyricists_with_fame.sort(key=lambda x: x['fame_score'], reverse=True)
+        enriched_songs.sort(key=lambda x: x['fame_score'], reverse=True)
+        
+        return {
+            'language_filter': language,
+            'songs': enriched_songs,
+            'artists': artists_with_fame,
+            'composers': composers_with_fame,
+            'lyricists': lyricists_with_fame,
+            'counts': {
+                'songs': len(enriched_songs),
+                'artists': len(artists_with_fame),
+                'composers': len(composers_with_fame),
+                'lyricists': len(lyricists_with_fame)
+            }
+        }
