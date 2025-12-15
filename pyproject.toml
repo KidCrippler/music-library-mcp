@@ -12,6 +12,10 @@ dependencies = [
 [project.scripts]
 music-library-mcp = "music_library_mcp.server:main"
 
+[tool.setuptools.packages.find]
+include = ["music_library_mcp*"]
+exclude = ["songs*", "scripts*", "tests*", "docs*", "examples*"]
+
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"

@@ -23,8 +23,9 @@ from .database import SongsDatabase
 
 
 # Initialize the database
-DB_PATH = Path(__file__).parent.parent / "songs" / "songs.json"
-db = SongsDatabase(DB_PATH)
+# Fetch songs index from remote URL
+SONGS_INDEX_URL = "https://raw.githubusercontent.com/KidCrippler/songs/master/songs.json"
+db = SongsDatabase(SONGS_INDEX_URL)
 
 # Create MCP server
 app = Server("music-library-mcp")

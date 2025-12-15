@@ -4,14 +4,20 @@ import json
 from pathlib import Path
 from typing import Any, Union, Optional
 from collections import defaultdict
+import httpx
 
 
 class SongsDatabase:
     """Manages the songs database with efficient indexing for queries."""
 
-    def __init__(self, json_path: Union[str, Path]):
-        """Initialize the database from a JSON file."""
-        self.json_path = Path(json_path)
+    def __init__(self, json_source: Union[str, Path]):
+        """Initialize the database from a JSON file or URL.
+        
+        Args:
+            json_source: Either a local file path or a URL to fetch the JSON from
+        """
+        self.json_source = str(json_source)
+        self.is_url = self.json_source.startswith('http://') or self.json_source.startswith('https://')
         self.data: dict[str, Any] = {}
         self.songs: list[dict[str, Any]] = []
         self.categories: list[dict[str, Any]] = []
@@ -32,9 +38,17 @@ class SongsDatabase:
         self._build_indexes()
 
     def _load_data(self) -> None:
-        """Load the JSON data from file."""
-        with open(self.json_path, 'r', encoding='utf-8') as f:
-            self.data = json.load(f)
+        """Load the JSON data from file or URL."""
+        if self.is_url:
+            # Fetch from URL
+            with httpx.Client() as client:
+                response = client.get(self.json_source, timeout=30.0)
+                response.raise_for_status()
+                self.data = response.json()
+        else:
+            # Load from local file
+            with open(self.json_source, 'r', encoding='utf-8') as f:
+                self.data = json.load(f)
 
         self.songs = self.data.get('songs', [])
         self.categories = self.data.get('categories', [])
